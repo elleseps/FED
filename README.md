@@ -24,9 +24,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 </details>
 
 
+
+
+
 ## Je website
 
-<details open>
+<details>
   <summary>Uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
@@ -41,6 +44,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/SSOverkoffiepagina.png" width="375px" alt="Over koffie pagina">
  
 </details>
+
+
 
 
 
@@ -71,6 +76,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
+
+
 ## Breakdownschets (week 1)
 
 <details>
@@ -91,24 +98,40 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 </details>
 
 
+
+
+
 ## Voortgang 1 (week 2)
 
-<details>
-  <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
+<details open>
+  <summary>Uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het opzetten van de html ging best soepel en stond ook best wel snel. Bij het werken aan de css ontstonden hier en daar wel wat moeilijkheden. Zo vond ik het lastig om te werken zonder classes, omdat ik nu erg vast liep met het feit dat je twee html pagina's hebt en toch apart elementen wil aanroepen zonder dat deze elementen voor beide pagina's wordt aangepast. Ook vond ik het lastig om de background voor de intro van de receptenpagina lekker uitgelijnd te krijgen. Ik wil de tekst namelijk graag links hebben en de afbeelding rechts maar dat gaat niet zo makkelijk als ik had gehoopt. Ook kreeg ik het logo niet lekker in het midden van mijn header, terwijl alle margins en paddings naar mijn idee wel goed stonden.
 
+  Uiteindelijk heb ik de tekst links uitgelijnd gekregen en de afbeelding naar rechts, maar het logo in het midden van de pagina is nog niet helemaal lekker gelukt. Ook heb ik bij de intro van mijn receptenpagina het probleem dat het vlak met de elementen niet helemaal lekker meeschaald naar kleiner formaat. En weet ik niet helemaal hoe ik mijn koffie's het beste kan gaan kaderen naast natuurlijk het gebruiken van een grid.
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+  Screenshots voor de ondersteuning
+  <img src="readme-images/VG1.1.png" width="375px" alt="Screenshot bovenste deel receptenpagina">
+  <img src="readme-images/VG1.2.png" width="375px" alt="Screenshot meeschalen intro werkt niet lekker">
+  <img src="readme-images/VG1.3.png" width="375px" alt="Screenshot van huidige status koffie kadering">
+  <img src="readme-images/VG1.3b.png" width="375px" alt="Screenshot van hoe ik de koffie's wil kaderen">
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  ### Agenda voor meeting 14 september
+  Groepje B2
 
+  | S1 Amber                | S2 Rhania                   | S3 Sophie                    | S4 Elles
+  | ---                     | ---                         | ---                          | ---              
+  | - Het schalen van tekst | - Het gebruiken van flexbox | - Het gebruiken van flexbox  | - Het plaatsen van het logo in het midden van de pagina
+  |                         |                             |                              | - Het meeschalen van de intro naar kleiner formaat
+  |                         |                             |                              | - Kaderen van de koffie's in een grid
+
+  Samenvattend
+  - Schalen naar kleiner formaat tekst en tekst+afbeelding
+  - Flexbox
+  - Uitlijnen met flexbox
+  - Responsive
+  - Elementen samenzetten in een vakje van een grid
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -238,8 +261,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  CSS
+  - W3schools.com. (2023). *CSS background-image property*. [online] Available at: https://www.w3schools.com/cssref/pr_background-image.php [Accessed 12 Sep. 2023].
+  - Imagecolorpicker.com. (2022). *👍 Color Picker online | HEX Color Picker | HTML Color Picker*. [online] Available at: https://imagecolorpicker.com/en [Accessed 12 Sep. 2023].
+  - Fontke.com. (2020). Lander Grande Font Download,Lander Grande Regular Font Download,LanderGrande-Regular Font Download|Lander Grande Regular 1.000;Lander Font Download-OTF Font/Uncategorized Font-Fontke.com For Mobile. [online] Available at: https://eng.m.fontke.com/font/162053989/download/ [Accessed 12 Sep. 2023].
+  - BestFonts.pro. (2022). *Font SoDo Sans: download and install for free.* [online] Available at: https://en.bestfonts.pro/font/download/6328c84e6c15c1f2b8168fb6 [Accessed 12 Sep. 2023].bron 1
 
 </details>
