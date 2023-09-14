@@ -123,7 +123,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | S1 Amber                | S2 Rhania                   | S3 Sophie                    | S4 Elles
   | ---                     | ---                         | ---                          | ---              
   | - Het schalen van tekst | - Het gebruiken van flexbox | - Het gebruiken van flexbox  | - Het plaatsen van het logo in het midden van de pagina
-  |                         |                             |                              | - Het meeschalen van de intro naar kleiner formaat
+  | - Selectoren css        |                             |                              | - Het meeschalen van de intro naar kleiner formaat
   |                         |                             |                              | - Kaderen van de koffie's in een grid
 
   Samenvattend
@@ -131,6 +131,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Flexbox
   - Uitlijnen met flexbox
   - Responsive
+  - Css selectors
   - Elementen samenzetten in een vakje van een grid
 
   ### Verslag van meeting
