@@ -103,7 +103,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 1 (week 2)
 
-<details open>
+<details>
   <summary>Uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -111,7 +111,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Uiteindelijk heb ik de tekst links uitgelijnd gekregen en de afbeelding naar rechts, maar het logo in het midden van de pagina is nog niet helemaal lekker gelukt. Ook heb ik bij de intro van mijn receptenpagina het probleem dat het vlak met de elementen niet helemaal lekker meeschaald naar kleiner formaat. En weet ik niet helemaal hoe ik mijn koffie's het beste kan gaan kaderen naast natuurlijk het gebruiken van een grid.
 
-  Screenshots voor de ondersteuning
+  ### Screenshots voor de ondersteuning
   <img src="readme-images/VG1.1.png" width="375px" alt="Screenshot bovenste deel receptenpagina">
   <img src="readme-images/VG1.2.png" width="375px" alt="Screenshot meeschalen intro werkt niet lekker">
   <img src="readme-images/VG1.3.png" width="375px" alt="Screenshot van huidige status koffie kadering">
@@ -135,12 +135,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Elementen samenzetten in een vakje van een grid
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Goed de sections, articles gebruikt
+  - Html ziet er strak uit
+  - Section: gebruiken voor een groep, article: iets eruit halen
+  - Gebruik van figures is niet echt nodig
+  - Zet de header eventueel in een grid
 
 </details>
 
@@ -150,22 +150,33 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 2 (week 3)
 
-<details>
-  <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
+<details open>
+  <summary>Uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het afmaken van de eerste pagina met css ging erg goed na de werkgroep, heb in het weekend veel gedaan kunnen krijgen waardoor ik de eerste pagina zo goed als af heb kunnen krijgen, dus daar ben ik erg blij mee. Wel was het werken aan de tweede pagina best lastig af en toe. Het maken van de sliders ging bijvoorbeeld niet in een keer helemaal goed, doordat de h3 die hierbij hoorde niet deed wat ik wilde doen. Ik had op de tweede pagina wel vaker problemen met de plaatsing van de h3 en hoop door dit voortgangsgesprek dit eenvoudiger te kunnen oplossen. De tweede pagina is nu voor 1/3 af en hoop hem dit weekend met behulp van deze voortgang op de javascript na af te hebben.
 
+  ### Screenshots voor de ondersteuning
+  <img src="readme-images/VG2.1.png" width="375px" alt="Screenshot section 2">
+  <img src="readme-images/VG2.1b.png" width="375px" alt="Screenshot section 6">
+  <img src="readme-images/VG2.2.png" width="375px" alt="Screenshot section duurzaamheid">
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+  ### Agenda voor meeting 21 september
+  Groepje B2
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | S1 Amber                | S2 Rhania                   | S3 Sophie                    | S4 Elles
+  | ---                     | ---                         | ---                          | ---              
+  | -                       | - Het gebruiken van flexbox | - Het gebruiken van flexbox  | - Grid van twee blokken met heading erboven
+  | -                       |                             |                              | - Linkjes href #
+  |                         |                             |                              | - Github link toont andere website
+  |                         |                             |                              | - Schalen klein scherm
+  |                         |                             |                              | - Uitlijning section 2,6 -> specifiek
+  |                         |                             |                              | - Css reset page 2 mogelijk? 
 
+  Samenvattend
+  - Gebruiken van een grid
+  - Linkjes die nergens heen linken
+  - Schalen klein scherm
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
