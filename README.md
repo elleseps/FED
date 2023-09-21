@@ -166,8 +166,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | S1 Amber                              | S2 Rhania                   | S3 Sophie                    | S4 Elles
   | ---                                   | ---                         | ---                          | ---              
-  | - Knoppen centreren en goede positie  | -                           | - Uitklapmenu gehele pagina  | - Grid van twee blokken met heading erboven
-  | - Gebruik sections/article            |                             |                              | - Linkjes href #
+  | - Knoppen centreren en goede positie  | - Uitklapmenu               | - Uitklapmenu gehele pagina  | - Grid van twee blokken met heading erboven
+  | - Gebruik sections/article            | - Website responsive        |                              | - Linkjes href #
   | - Carrousel vereenvoudigen            |                             |                              | - Schalen klein scherm
   |                                       |                             |                              | - Uitlijning section 2,6 -> specifiek
   |                                       |                             |                              | - Css reset page 2 mogelijk? 
@@ -175,7 +175,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Samenvattend
   - Grid van twee blokken en heading erboven
   - Linkjes href
-  - Schalen klein scherm
+  - Schalen klein scherm, website responsive
   - Uitklapmenu
   - Positionering knoppen
   - Gebruik sections/articles
