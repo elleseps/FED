@@ -49,12 +49,12 @@ body {
 /***************/
 @font-face {
 	font-family: "Kop";
-	src: url('/fonts/Lander\ Grande\ Regular.otf');
+	src: url('fonts/LanderGrandeRegular.otf');
 }
 
 @font-face {
 	font-family: "NormalText";
-	src: url('/fonts/SoDoSans-Regular.ttf');
+	src: url('fonts/SoDoSans-Regular.ttf');
 }
 
 

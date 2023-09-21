@@ -164,19 +164,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting 21 september
   Groepje B2
 
-  | S1 Amber                | S2 Rhania                   | S3 Sophie                    | S4 Elles
-  | ---                     | ---                         | ---                          | ---              
-  | -                       | - Het gebruiken van flexbox | - Het gebruiken van flexbox  | - Grid van twee blokken met heading erboven
-  | -                       |                             |                              | - Linkjes href #
-  |                         |                             |                              | - Github link toont andere website
-  |                         |                             |                              | - Schalen klein scherm
-  |                         |                             |                              | - Uitlijning section 2,6 -> specifiek
-  |                         |                             |                              | - Css reset page 2 mogelijk? 
+  | S1 Amber                              | S2 Rhania                   | S3 Sophie                    | S4 Elles
+  | ---                                   | ---                         | ---                          | ---              
+  | - Knoppen centreren en goede positie  | -                           | - Uitklapmenu gehele pagina  | - Grid van twee blokken met heading erboven
+  | - Gebruik sections/article            |                             |                              | - Linkjes href #
+  | - Carrousel vereenvoudigen            |                             |                              | - Schalen klein scherm
+  |                                       |                             |                              | - Uitlijning section 2,6 -> specifiek
+  |                                       |                             |                              | - Css reset page 2 mogelijk? 
 
   Samenvattend
-  - Gebruiken van een grid
-  - Linkjes die nergens heen linken
+  - Grid van twee blokken en heading erboven
+  - Linkjes href
   - Schalen klein scherm
+  - Uitklapmenu
+  - Positionering knoppen
+  - Gebruik sections/articles
+  - Eenvoudige carrousel
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -277,6 +280,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - W3schools.com. (2023). *CSS background-image property*. [online] Available at: https://www.w3schools.com/cssref/pr_background-image.php [Accessed 12 Sep. 2023].
   - Imagecolorpicker.com. (2022). *👍 Color Picker online | HEX Color Picker | HTML Color Picker*. [online] Available at: https://imagecolorpicker.com/en [Accessed 12 Sep. 2023].
   - Fontke.com. (2020). Lander Grande Font Download,Lander Grande Regular Font Download,LanderGrande-Regular Font Download|Lander Grande Regular 1.000;Lander Font Download-OTF Font/Uncategorized Font-Fontke.com For Mobile. [online] Available at: https://eng.m.fontke.com/font/162053989/download/ [Accessed 12 Sep. 2023].
-  - BestFonts.pro. (2022). *Font SoDo Sans: download and install for free.* [online] Available at: https://en.bestfonts.pro/font/download/6328c84e6c15c1f2b8168fb6 [Accessed 12 Sep. 2023].bron 1
+  - BestFonts.pro. (2022). *Font SoDo Sans: download and install for free.* [online] Available at: https://en.bestfonts.pro/font/download/6328c84e6c15c1f2b8168fb6 [Accessed 12 Sep. 2023].
+  - https://www.facebook.com/flaticon (2020). *Search Icon - 3031293*. [online] Flaticon. Available at: https://www.flaticon.com/free-icon/search_3031293?k=1694865872212&log-in=google [Accessed 16 Sep. 2023].
+  - W3schools.com. (2023). *CSS Layout - The position Property*. [online] Available at: https://www.w3schools.com/css/css_positioning.asp [Accessed 16 Sep. 2023].
+  - [Css-tricks.com](http://css-tricks.com/). (2023). Available at: https://css-tricks.com/wp-content/uploads/2022/02/css-flexbox-poster.png [Accessed 19 Sep. 2023].
 
 </details>
