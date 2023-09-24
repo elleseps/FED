@@ -182,12 +182,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Eenvoudige carrousel
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - em voor tekst, plaatje %
+  - flex: wrap als ze op mobiel onder elkaar moeten
+  - geen thematische groepering → div
+  - Section: groep thematische content, styling mag je div gebruiken
+  - Kijk echt waar sections echt relevant zijn
+  - Bijsnijden: overflow hidden misschien bij 2e pagina header
+  - Linkjes allemaal naar de andere pagina linken
+  - Of een button of een link, nooit allebei, stijl desnoods a als een button
+  - Styling met divs voor bijvoorbeeld twee elementen naast elkaar -> geen sections dus
 
 </details>
 

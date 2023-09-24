@@ -44,17 +44,17 @@ body {
 
 
 
-/***************/
-/* LETTERTYPEN */
-/***************/
+/**********************************/
+/* LETTERTYPEN (Mozilla.org, 2023)*/
+/**********************************/
 @font-face {
 	font-family: "Kop";
-	src: url('fonts/LanderGrandeRegular.otf');
+	src: url('../fonts/LanderGrandeRegular.otf') format("opentype");
 }
 
 @font-face {
 	font-family: "NormalText";
-	src: url('fonts/SoDoSans-Regular.ttf');
+	src: url('../fonts/SoDoSans-Regular.ttf') format("truetype");
 }
 
 
@@ -81,6 +81,7 @@ header {
 /************************************/
 nav ul {
 	display: flex;
+	flex-wrap: wrap;
 	padding: 0;
 	margin-left: 4em;
 }
@@ -178,11 +179,13 @@ main > section:first-of-type img {
 /*****************/
 section:nth-of-type(2) {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 }
 
 section:nth-of-type(2) ul li:first-of-type {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 2em;
 	margin-bottom: 2em;
@@ -192,14 +195,14 @@ section:nth-of-type(2) li:first-of-type a {
 	padding-right: 2em;
 	color: #787474;
 	font-size: 1.5em;
-	font-family: "Kop", Arial;
+	font-family: "Kop";
 	text-decoration: none;
 }
 
 section:nth-of-type(2) li:first-of-type a:hover,
 section:nth-of-type(2) li:first-of-type a:active {
 	font-size: 1.5em;
-	font-family: "Kop", Arial;
+	font-family: "Kop";
 	text-decoration: underline;
 	color: #036242;
 }
@@ -212,14 +215,14 @@ section:nth-of-type(2) li:nth-of-type(2) a {
 	padding-right: 1em;
 	color: #787474;
 	font-size: 1em;
-	font-family: "NormalText", Arial;
+	font-family: "NormalText";
 	text-decoration: none;
 }
 
 section:nth-of-type(2) li:nth-of-type(2) a:hover,
 section:nth-of-type(2) li:nth-of-type(2) a:active {
 	font-size: 1em;
-	font-family: "NormalText", Arial;
+	font-family: "NormalText";
 	text-decoration: underline;
 	color: #036242;
 }
@@ -235,6 +238,7 @@ section:nth-of-type(3) {
 	display: flex;
 	justify-content: center; /* Horizontaal centreren */
 	align-items: center; /* Verticaal centreren */
+	flex-wrap: wrap;
 }
 
 section:nth-of-type(3) input {
@@ -285,14 +289,23 @@ section:nth-of-type(3) button:active {
 /*****************/
 /* VIERDE SECTIE */
 /*****************/
+section:nth-of-type(4) {
+	display: flex;
+	justify-content: center; /* Plaats het grid in het midden van de container */
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+}
+
 section:nth-of-type(4) ul {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr); /* Drie even grote kolommen */
 	gap: 1em; /* Voeg ruimte tussen de grid-items toe */
 	justify-content: center; /* Plaats het grid in het midden van de container */
 	padding: 0;
-	margin-left: 8em;
-	margin-right: 8em;
+	margin: 0;
+	max-width: 100%;
 }
 
 section:nth-of-type(4) ul li {
@@ -383,6 +396,27 @@ main section:nth-of-type(5) a:active {
 	padding: 0;
 }
 
+.page2 h3 {
+	font-family: "Kop";
+	font-size: 2em;
+	text-transform: uppercase; 
+}
+
+.page2 h3:first-of-type,
+.page2 h3:nth-of-type(2),
+.page2 h3:nth-of-type(3),
+.page2 h3:nth-of-type(4),
+.page2 h3:nth-of-type(5),
+.page2 h3:nth-of-type(6) {
+	padding-left: 2em;
+	margin-left: 1em;
+	margin-top: 3em;
+}
+
+.page2 h4 {
+	font-family: "Kop";
+	font-size: 1.2em;
+}
 
 
 
@@ -390,7 +424,7 @@ main section:nth-of-type(5) a:active {
 /**************/
 /* SECTIE 1 P2*/
 /**************/
-.page2 section:first-of-type article {
+.page2 > section:first-of-type > article:first-of-type {
 	position: relative;
 	overflow: hidden; /* Voorkom dat de tekst buiten de sectie valt */
 	display: flex;
@@ -402,7 +436,7 @@ main section:nth-of-type(5) a:active {
 	max-width: 50em;
 }
   
-.page2 section:first-of-type img {
+.page2 > section:first-of-type > img:first-of-type {
 	position: absolute;
 	margin: 0;
 	top: 8em;
@@ -425,65 +459,86 @@ main section:nth-of-type(5) a:active {
 
 
 /*****************/
-/* SECTIE 2, 6 P2*/
+/* DIV 1, 3 P2*/
 /*****************/
-.page2 section:nth-of-type(2),
-.page2 section:nth-of-type(6) {
+.page2 div:first-of-type,
+.page2 div:nth-of-type(3),
+.page2 div:nth-of-type(5)  {
 	display: flex;
-	margin-top: 10em;
-	overflow-x:scroll;  
-	max-width: 100vw;
-	margin-bottom: 4em;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
 }
 
-.page2 section:nth-of-type(2) h3,
-.page2 section:nth-of-type(6) h3 {
-	background-color: lightgrey;
-	text-align: left; /* Tekst uitlijnen in het midden van het blok */
-	align-items: center; /* Verticale uitlijning in het midden */
-	padding-top: 6em;
-	padding-bottom: 6em;
-	padding-left: 2em;
-	padding-right: 2em;
-	margin: 0.5em 0 0 0;
-}  
-
-.page2 section:nth-of-type(2) article,
-.page2 section:nth-of-type(6) article {
+.page2 div:first-of-type section,
+.page2 div:nth-of-type(3) section,
+.page2 div:nth-of-type(5) section {
 	margin: 1em;
-	padding: 0em;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: baseline;
 }
 
-.page2 h3 {
-	font-family: "Kop", Arial;
-	font-size: 2em;
-	text-transform: uppercase; 
+.page2 div:first-of-type img,
+.page2 div:nth-of-type(3) img,
+.page2 div:nth-of-type(5) img {
+	flex: 1;
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+	padding: 0;
 }
 
-.page2 h4 {
-	font-family: "Kop", Arial;
-	font-size: 1.2em;
+.page2 div p:first-of-type {
+	color: #111;
 }
 
+.page2 h3:first-of-type {
+	margin: 1em;
+	margin-top: 8em;
+}
 
 
 
 
 /*****************/
-/* SECTIE 3, 7 P2*/
+/* DIV 2, 6    P2*/
 /*****************/
-.page2 article:nth-of-type(5) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Drie even grote kolommen */
-    gap: 1em; /* Voeg ruimte tussen de grid-items toe */
-    justify-content: center; /* Plaats het grid in het midden van de container */
-    padding: 0;
-    margin-left: 8em;
-    margin-right: 8em;
+.page2 div:nth-of-type(2),
+.page2 div:nth-of-type(6)  {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 2em;
 }
 
-.page2 section:nth-of-type(3) h3:nth-of-type(2) {
-    position: relative; /* Plaats de h3-elementen bovenop het grid */
+.page2 div:nth-of-type(2) section,
+.page2 div:nth-of-type(6) section {
+	margin: 1em;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: baseline;
+	max-width: 40.5em;
+}
+
+.page2 div:nth-of-type(2) img,
+.page2 div:nth-of-type(6) img {
+	flex: 1;
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+	padding: 0;
+}
+
+.page2 div p:first-of-type {
+	color: #111;
 }
 
 
@@ -493,36 +548,7 @@ main section:nth-of-type(5) a:active {
 /**************/
 /* SECTIE 5 P2*/
 /**************/
-.page2 section:nth-of-type(5) h3 {
-	text-align: left;
-	margin-left: 3em;
-}
 
-.page2 section:nth-of-type(5) article {
-	margin-right: 0;
-	margin-top: 0;
-	margin-bottom: 12em;
-	margin-left: 12em;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	text-align: left;
-	width: 40em;
-	position: relative;
-}
-  
-.page2 section:nth-of-type(5) img {
-	position: absolute;
-	right: 6em;
-	margin-bottom: 12em;
-}
-
-.page2 section:nth-of-type(5) h1,
-.page2 section:nth-of-type(5) h2,
-.page2 section:nth-of-type(5) p {
-	
-}
 
 
 
@@ -532,7 +558,7 @@ main section:nth-of-type(5) a:active {
 /* OVERIGE STIJLEN */
 /*******************/
 h1 {
-	font-family: "Kop", Arial;
+	font-family: "Kop";
 	color: white;
 	font-size: 3em;
 	font-weight: lighter;
@@ -541,7 +567,7 @@ h1 {
 }
 
 h2 {
-	font-family: "NormalText", Arial;
+	font-family: "NormalText";
 	font-weight: lighter;
 	color: white;
 }
@@ -573,6 +599,7 @@ footer {
 	background-color: #1f3832;
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	align-items: center;
 	text-align: center;
 	padding-bottom: 2em;
@@ -609,12 +636,13 @@ footer nav ul:nth-of-type(2) li a {
 	color: #989c9c;
 }
 
-footer section {
+footer article {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 }
 
-footer section img {
+footer article img {
 	margin-left: 2em;
 	margin-right: 2em;
 }
@@ -626,4 +654,3 @@ footer p:last-of-type {
 	margin-left: 50em;
 	padding-top: 1em;
 }
-
