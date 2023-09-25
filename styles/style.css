@@ -79,52 +79,67 @@ header {
 /************************************/
 /* ALGEMENE NAVIGATIE PAGINA 1 EN 2 */
 /************************************/
+/* Default styles */
 nav ul {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0;
 	margin-left: 4em;
 }
-
+  
 nav ul li {
 	list-style-type: none;
 	padding-top: 0.2em;
 	padding-right: 3.5em;
 }
-
+  
 nav ul li a {
 	text-decoration: none;
 	color: black;
 	font-size: 1.2em;
 }
-
+  
 nav ul li a:hover,
 nav ul li a:active {
 	text-decoration: underline;
 	color: #036242;
 	font-size: 1.2em;
 }
-
-nav button:first-of-type {
+  
+nav button:first-of-type,
+nav input:first-of-type {
 	padding: 1em;
 	border-radius: 2em;
 	margin-left: 16em;
 }
-
+  
 nav input:first-of-type {
-	padding: 1em;
-	border-radius: 2em;
 	margin: 0;
 }
-
+  
 nav input:first-of-type:hover,
 nav input:first-of-type:active,
 nav button:first-of-type:hover,
 nav button:first-of-type:active {
-	padding: 1em;
-	border-radius: 2em;
 	border-color: #036242;
 }
+  
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+		nav ul {
+		margin-left: 0; /* Remove left margin */
+	}
+  
+	nav ul li {
+		padding: 0.2em 0; /* Adjust padding for smaller screens */
+	}
+	
+	nav button:first-of-type,
+	nav input:first-of-type {
+	  margin: 0; /* Remove margin for smaller screens */
+	}
+}
+  
 
 
 
@@ -384,6 +399,10 @@ main section:nth-of-type(5) a:active {
 
 
 
+/******************************************/
+/*                 VOOR P2                */
+/******************************************/
+
 
 /**************/
 /* ALGEMEEN P2*/
@@ -443,6 +462,7 @@ main section:nth-of-type(5) a:active {
 	width: 100%; /* Breedte 100% van de pagina */
 	height: 35em; /* Hoogte instellen op 35em */
 	object-fit: cover; /* Bijsnijden (croppen) om de verhoudingen te behouden */
+	overflow: hidden;
 }
 
 .page2 section:first-of-type h1,
