@@ -150,7 +150,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 2 (week 3)
 
-<details open>
+<details>
   <summary>Uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -200,12 +200,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Toegankelijkheidstest 2/2 (week 4)
 
-<details>
-  <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
+<details open>
+  <summary>Uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
+  -  Mijn HTML kwam wel door de validator heen in tegen stelling tot de originele website
+  - Doordat mijn site nog niet helemaal responsive is werkt viewport zoom nog niet lekker en werkt hij nog niet lekker voor mobiel, hier wilde ik nog mee aan de slag gaan door aan de slag te gaan met het weghalen van de margins en max en min width met behulp van media queries.
+  - Mijn website werkt lekker met keyboard en heeft ook een visuele focus die past bij het ontwerp van de website.
+  - De site was goed te doorlopen met een screenreader alleen mochten sommigen labels voor bijvoorbeeld knoppen nog wat specifieker en was elke link bezocht, dus ook dat wil ik nog fixen door ze een specifiekere naam te geven.
+  - Er worden heading elementen gebruikt om content te introduceren.
+  - Er worden geen heading levels overgeslagen.
+  - Er worden juiste benamingen gebruikt voor de verschillende controls.
+  - Controls bevatten nu focus states
+  - De site bevat helaas geen ondersteuning voor dark/light mide, high-contrast mode en increase text size, omdat de focus op responsive lag en daar niet heel veel tijd voor was.
+  - Color contrast van de site zit goed in elkaar.
 </details>
 
 
@@ -287,5 +296,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - https://www.facebook.com/flaticon (2020). *Search Icon - 3031293*. [online] Flaticon. Available at: https://www.flaticon.com/free-icon/search_3031293?k=1694865872212&log-in=google [Accessed 16 Sep. 2023].
   - W3schools.com. (2023). *CSS Layout - The position Property*. [online] Available at: https://www.w3schools.com/css/css_positioning.asp [Accessed 16 Sep. 2023].
   - [Css-tricks.com](http://css-tricks.com/). (2023). Available at: https://css-tricks.com/wp-content/uploads/2022/02/css-flexbox-poster.png [Accessed 19 Sep. 2023].
+  - Mozilla.org. (2023). *@font-face - CSS: Cascading Style Sheets | MDN*. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face [Accessed 24 Sep. 2023].
+  - Mozilla.org. (2023). *scale() - CSS: Cascading Style Sheets | MDN*. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale [Accessed 27 Sep. 2023].
 
 </details>

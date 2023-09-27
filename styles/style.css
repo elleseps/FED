@@ -37,7 +37,7 @@
 /*************************/
 body {
 	margin: 0;
-	max-width: 100vw;
+	max-width: 100%;
 }
 
 .page2 main {
@@ -99,8 +99,8 @@ header {
 nav ul {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	padding: 0;
-	margin-left: 4em;
 }
   
 nav ul li {
@@ -126,9 +126,12 @@ nav button:first-of-type,
 nav input:first-of-type {
 	padding: 1em;
 	border-radius: 2em;
-	margin-left: 16em;
 }
-  
+
+nav > img:first-of-type {
+	display: none;
+}
+
 nav input:first-of-type {
 	margin: 0;
 }
@@ -141,10 +144,10 @@ nav button:first-of-type:active {
 	box-shadow: 0px 0px 10px #036242;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 871x) {
 	/* Verberg de "Waar te koop" knop */
 	nav button:first-of-type {
-	 	 display: none;
+	 	display: none;
 	}
 	
 	/* Toon het hamburgermenu-icoontje */
@@ -154,7 +157,6 @@ nav button:first-of-type:active {
 		margin: 0;
 	}
 
-	nav button:first-of-type,
 	nav input:first-of-type {
 		padding: 1em;
 		border-radius: 2em;
@@ -162,11 +164,19 @@ nav button:first-of-type:active {
 	}
 
 	nav {
-		margin:0.7em;
+		margin:1em;
 	}
 
 	nav img {
-		transform: scale(0.7);
+		margin: 1em;
+	}
+
+	nav > img:first-of-type {
+		display: flex;
+	}
+
+	nav ul:first-of-type {
+		display: none;
 	}
 
 	nav ul {
@@ -174,17 +184,6 @@ nav button:first-of-type:active {
 		flex-wrap: wrap;
 		padding: 0;
 		margin-left: 0em;
-	}
-
-	nav ul li {
-		padding: 0;
-		margin-left: 0em;
-	}
-
-	nav ul li a {
-		text-decoration: none;
-		color: black;
-		font-size: 0.8em;
 	}
 
 	header {
