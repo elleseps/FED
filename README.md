@@ -233,11 +233,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Student 1 Amber
+  - Waar kan ik px gebruiken en waar em voor gebruiken?
+  - Hoe voeg je captions en transcript toe?
+
+  Student 2 Rhania
+  - Niets van gehoord
+
+  Student 3 Sophie
+  - Niets van gehoord
+
+  Student 4 Elles
+  - Responsive maken met betrekking tot margins
+  - Werken met mediaqueries, voor de diverse schermformaten
+  - Sections juist gebruikt, of meer divjes
+  - Articles juist toegepast
+
+  Samenvattend
+  - Px vs em
+  - Captions en transcript
+  - Responsive margins
+  - Mediaqueries
+  - Sections vs divjes
+  - Articles gebruik
 
 
   ### Verslag van meeting
