@@ -238,11 +238,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Hoe voeg je captions en transcript toe?
 
   Student 2 Rhania
-  - Niets van gehoord
+  - Menu transitie scherm inkomen
 
   Student 3 Sophie
-  - Niets van gehoord
-
+  - Menu transitie scherm inkomen
+  
   Student 4 Elles
   - Responsive maken met betrekking tot margins
   - Werken met mediaqueries, voor de diverse schermformaten
@@ -259,13 +259,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
+  - Margins kan je gewoon gebruiken om responsive te maken
+  - Media queries kan je gebruiken op het moment dat de site stuk gaat, verder voor het responsive maken gebruiken
+  - Toepassing sections en articles terug te vinden in foto teamskanaal
+  - Volgende keer mobile first beginnen, is net iets makkelijker
+  - Volgende stap: responsive maken en regels javascript toevoegen
 </details>
 
 
@@ -275,7 +273,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Eindgesprek (week 5)
 
 <details>
-  <summary>uitwerken voor eindgesprek</summary>
+  <summary>Uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">

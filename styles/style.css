@@ -96,102 +96,124 @@ header {
 /* ALGEMENE NAVIGATIE PAGINA 1 EN 2 */
 /************************************/
 /* Default styles */
-nav ul {
+header nav ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	padding: 0;
 }
   
-nav ul li {
+header nav ul li {
 	list-style-type: none;
 	padding-top: 0.2em;
 	padding-right: 3.5em;
 }
   
-nav ul li a {
+header nav ul li a {
 	text-decoration: none;
 	color: black;
 	font-size: 1.2em;
 }
   
-nav ul li a:hover,
-nav ul li a:active {
+header nav ul li a:hover,
+header nav ul li a:active {
 	text-decoration: underline;
 	color: #036242;
 	font-size: 1.2em;
 }
   
-nav button:first-of-type,
-nav input:first-of-type {
+header nav button:first-of-type,
+header nav input:first-of-type {
 	padding: 1em;
 	border-radius: 2em;
 }
 
-nav > img:first-of-type {
+header nav > img:first-of-type, 
+header nav > img:nth-of-type(3) {
 	display: none;
 }
 
-nav input:first-of-type {
+header nav input:first-of-type {
 	margin: 0;
 }
   
-nav input:first-of-type:hover,
-nav input:first-of-type:active,
-nav button:first-of-type:hover,
-nav button:first-of-type:active {
+header nav input:first-of-type:hover,
+header nav input:first-of-type:active,
+header nav button:first-of-type:hover,
+header nav button:first-of-type:active {
 	border-color: #036242;
 	box-shadow: 0px 0px 10px #036242;
 }
 
-@media screen and (max-width: 871x) {
-	/* Verberg de "Waar te koop" knop */
-	nav button:first-of-type {
-	 	display: none;
-	}
-	
-	/* Toon het hamburgermenu-icoontje */
-	nav input:first-of-type {
-	  	display: block;
-	  	width: 6em;
-		margin: 0;
-	}
-
-	nav input:first-of-type {
-		padding: 1em;
-		border-radius: 2em;
-		margin: 0;
-	}
-
-	nav {
-		margin:1em;
-	}
-
-	nav img {
-		margin: 1em;
-	}
-
-	nav > img:first-of-type {
+/* CSS voor het schermformaat van max 767px  */
+@media screen and (max-width: 767px) {
+    header nav {
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between; /* Verdeel de elementen gelijkmatig over de horizontale as */
+		align-items: center; /* Centreer de elementen verticaal */
+		padding: 0 1em;
 	}
 
-	nav ul:first-of-type {
+    header nav ul li {
+        width: 100%; /* Volledige breedte voor elk item */
+    }
+
+	header nav img:first-of-type {
+		display: block;
+
+	}
+
+	header nav ul:first-of-type {
 		display: none;
 	}
 
-	nav ul {
-		display: flex;
-		flex-wrap: wrap;
-		padding: 0;
-		margin-left: 0em;
+	header nav ul:nth-of-type(2) {
+		display: none;
 	}
 
-	header {
+	header nav:nth-of-type(2) img {
+		display: block;
+		margin-right: 0.2em;
+		margin-left: auto;
+		width: 2.5em;
+	}
+}
+
+/* CSS voor het schermformaat tussen 768px en 909px */
+@media screen and (min-width: 768px) and (max-width: 909px) {
+    header nav {
+		display: flex;
+		flex-wrap: wrap;
 		max-width: 100vw;
-		padding: 0;
+	}
+
+    header nav ul li {
+        width: 100%; /* Volledige breedte voor elk item */
+		margin-bottom: 0.1em;
+    }
+
+	header nav ul:first-of-type {
+		display: flex;
+		flex-wrap: nowrap;
+		margin-left: 3em;
+	}
+
+	header nav ul:first-of-type li:first-of-type {
+		display: none;
+	}
+
+	header nav button {
+		display: none;
+	}
+
+	header nav:nth-of-type(2) {
+		margin-right: 0.5em;
+		margin-left: auto;
 	}
 }
   
+
 
 
 
@@ -205,37 +227,89 @@ section {
 
 
 
-
 /*****************/
 /* EERSTE SECTIE */
 /*****************/
-main > section:first-of-type {
-	background-color: #036242;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin: 0;
-}
-
 main article:first-of-type {
 	margin: 0;
 	padding-left: 12em;
 }
 
-section:first-of-type p:first-of-type {
+section:first-of-type p:last-of-type {
 	color: var(--color-text2);
+	max-width: 80%;
 }
 
-/* Afbeeldingen in de eerste sectie */
-main > section:first-of-type img {
-	height: 35em;
-	width: auto;
-	margin-right: 6em;
-	margin-left: 8em;
-	margin-top: 4em;
+section:first-of-type > div:first-of-type {
+	position: relative;
+	overflow: hidden; /* Voorkom dat de tekst buiten de sectie valt */
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	text-align:left; /* Uitlijnen van tekst in het midden van de afbeelding */
+	margin-top: 10em;
+	max-width: 50em;
+	margin-bottom: 14em;
+	margin-left: 5em;
+}
+  
+section:first-of-type > img:first-of-type {
+	position: absolute;
+	margin: 0;
+	top: 8em;
+	width: 100%; /* Breedte 100% van de pagina */
+	height: 35em; /* Hoogte instellen op 35em */
+	object-fit: cover; /* Bijsnijden (croppen) om de verhoudingen te behouden */
+	overflow: hidden;
 }
 
+div:first-of-type h1,
+div:first-of-type h2,
+div:first-of-type p {
+	position: relative; /* Breng de tekst naar voren */
+	z-index: 1; /* Plaats de tekst bovenop de afbeelding */
+	padding: 0; /* Voeg wat ruimte toe rond de tekst voor leesbaarheid */
+	margin-top: 0.5em;
+	margin-bottom: 0em;
+	color: white;
+}
 
+/* CSS voor het schermformaat kleiner dan 768px */
+@media screen and (max-width: 767px) {
+    section:first-of-type > div:first-of-type {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		text-align:left; /* Uitlijnen van tekst in het midden van de afbeelding */
+		margin-top: 2em;
+		margin-bottom: 1em;
+		margin-left: 2em;
+		margin-right: 2em;
+    }
+
+    section:first-of-type img {
+        display: none;
+    }
+	
+	section:first-of-type {
+		background-color: #036242;
+		padding-top: 2em;
+		padding-bottom: 2em;
+		width: 100%;
+	}
+
+	section:first-of-type h1 {
+		font-size: 2.5em;
+	}
+}
+
+/* CSS voor het schermformaat groter dan 768px */
+@media screen and (min-width: 767px) {
+
+    section:first-of-type img {
+        width: 100%;
+    }
+}
 
 
 
@@ -290,6 +364,53 @@ section:nth-of-type(2) li:nth-of-type(2) a:active {
 	font-family: "NormalText";
 	text-decoration: underline;
 	color: #036242;
+}
+
+/* CSS voor het schermformaat van max 767px  */
+@media screen and (max-width: 767px) {
+    section:nth-of-type(2) ul {
+        width: 90vw;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    section:nth-of-type(2) ul li {
+        width: 100%; /* Volledige breedte voor elk item */
+        margin-bottom: 1em; /* Voeg wat ruimte toe onder elk item */
+		display: flex;
+		flex-wrap: wrap;
+    }
+
+	section:nth-of-type(2) ul li:first-of-type {
+		display: flex;
+		justify-content: left;
+	}
+}
+
+/* CSS voor het schermformaat tussen 768px en 1200px */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    section:nth-of-type(2) ul {
+		width: 80vw;
+    }
+
+    section:nth-of-type(2) ul li {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+    }
+}
+
+/* CSS voor het schermformaat van minimaal 1200px */
+@media screen and (min-width: 1200px) {
+    section:nth-of-type(2) ul {
+		width: 80vw;
+    }
+
+    section:nth-of-type(2) ul li {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+    }
 }
 
 
@@ -348,7 +469,18 @@ section:nth-of-type(3) button:active {
 	margin-left: 1em;
 }
 
-
+/* CSS voor het schermformaat kleiner dan 768px (eerste mediaquery) */
+@media screen and (max-width: 767px) {
+    section:nth-of-type(3) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: 2em;
+		margin-bottom: 1em;
+		margin-left: 2em;
+		margin-right: 2em;
+    }
+}
 
 
 
@@ -420,6 +552,47 @@ section:nth-of-type(4) ul li a p:nth-of-type(2){
 	font-size: 0.8em;
 }
 
+/* CSS voor het schermformaat kleiner dan 768px (eerste mediaquery) */
+@media screen and (max-width: 767px) {
+    section:nth-of-type(4) ul {
+        grid-template-columns: repeat(1, 1fr); /* 1 kolom in plaats van drie */
+        gap: 0.5em; /* Verminder de ruimte tussen de grid-items */
+        width: 90vw;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    section:nth-of-type(4) ul li {
+        width: 100%; /* Volledige breedte voor elk item */
+        margin-bottom: 1em; /* Voeg wat ruimte toe onder elk item */
+    }
+}
+
+/* CSS voor het schermformaat tussen 768px en 1200px */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    section:nth-of-type(4) ul {
+        grid-template-columns: repeat(2, 1fr); /* Twee kolommen in plaats van drie */
+        gap: 1em; /* Verminder de ruimte tussen de grid-items */
+        width: 80vw;
+    }
+
+    section:nth-of-type(4) ul li {
+        width: 100%; /* Volledige breedte voor elk item */
+    }
+}
+
+/* CSS voor het schermformaat van minimaal 1200px */
+@media screen and (min-width: 1200px) {
+    section:nth-of-type(4) ul {
+        grid-template-columns: repeat(3, 1fr); /* Twee kolommen in plaats van drie */
+        gap: 1em; /* Verminder de ruimte tussen de grid-items */
+        width: 80vw;
+    }
+
+    section:nth-of-type(4) ul li {
+        width: 100%; /* Volledige breedte voor elk item */
+    }
+}
 
 
 
@@ -526,16 +699,17 @@ main section:nth-of-type(5) a:active {
 	background-color:white;
 }
 
-.page2 > section:first-of-type > article:first-of-type {
+.page2 > section:first-of-type > div:first-of-type {
 	position: relative;
 	overflow: hidden; /* Voorkom dat de tekst buiten de sectie valt */
 	display: flex;
 	flex-wrap: wrap;
-	align-content: center;
-	align-items:center;
 	text-align:left; /* Uitlijnen van tekst in het midden van de afbeelding */
-	margin-top: 7em;
 	max-width: 50em;
+	margin-top: 10em;
+	max-width: 50em;
+	margin-bottom: 14em;
+	margin-left: 5em;
 }
   
 .page2 > section:first-of-type > img:first-of-type {
@@ -898,11 +1072,11 @@ li {
 }
 
 p {
-	font-family: "NormalText", Arial;
+	font-family: "NormalText";
 }
 
 a {
-	font-family: "NormalText", Arial;
+	font-family: "NormalText";
 }
 
 
@@ -920,15 +1094,26 @@ footer {
 	align-items: center;
 	text-align: center;
 	padding-bottom: 2em;
+	max-width: 100vw;
 }
-  
+
+footer ul {
+	padding: 0em;
+	display: flex;
+}  
+
+footer ul li {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
 footer > img:first-of-type {
 	margin: 0 auto; /* Horizontaal centreren van het logo */
 	position: relative;
 	bottom: 2em;
 }
   
-footer > p:first-of-type {
+footer p:first-of-type {
 	color: var(--color-text2);
 	text-transform: uppercase;
 	position: relative;
@@ -936,9 +1121,10 @@ footer > p:first-of-type {
 	margin: 0;
 }
 
-footer > a {
+footer a {
 	margin: 1em 0; /* Verticaal centreren van de tekst met wat ruimte boven en onder */
 	color: var(--color-text2);
+	text-decoration: none;
 }
 
 a:focus {
@@ -953,6 +1139,10 @@ footer nav {
 
 footer nav ul:first-of-type li a {
 	color:var(--color-text2);
+}
+
+footer nav ul:first-of-type li a:last-of-type {
+	margin-left: 1em;
 }
 
 footer nav ul:nth-of-type(2) li a {
@@ -973,7 +1163,33 @@ footer article img {
 footer p:last-of-type {
 	color: #989c9c;
 	font-size: 0.6em;
-	margin-right: 50em;
-	margin-left: 50em;
+	margin-right: 20em;
+	margin-left: 20em;
 	padding-top: 1em;
+}
+
+@media screen and (max-width: 767px) {
+    footer {
+        margin: 0em;
+    }
+
+    footer nav, 
+	footer article, 
+	footer p:last-of-type {
+		display: none;
+	}
+}
+
+/* CSS voor het schermformaat tussen 768px en 1200px (tweede mediaquery) */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    footer {
+        margin: 0em;
+		max-width: 100vw;
+    }
+
+	footer nav,
+	footer article,
+	footer p {
+		max-width: 80vw;
+	}
 }
