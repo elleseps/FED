@@ -291,7 +291,7 @@ div:first-of-type p {
         display: none;
     }
 	
-	section:first-of-type {
+	main > section:first-of-type {
 		background-color: #036242;
 		padding-top: 2em;
 		padding-bottom: 2em;
@@ -475,7 +475,6 @@ section:nth-of-type(3) button:active {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		margin-top: 2em;
 		margin-bottom: 1em;
 		margin-left: 2em;
 		margin-right: 2em;
@@ -691,6 +690,31 @@ main section:nth-of-type(5) a:active {
 	box-shadow: 5px 5px white;
 }
 
+/* CSS voor het schermformaat kleiner dan 970px */
+@media screen and (max-width: 970px) {
+    .page2 img:first-of-type  {
+		display: flex;
+	}
+
+	.page2 h4 {
+		padding: 0em;
+	}
+
+	.page2 p {
+		max-width: 80vw;
+	}
+
+	.page2 h3:nth-of-type(2),
+	.page2 h3:nth-of-type(3),
+	.page2 h3:nth-of-type(4),
+	.page2 h3:nth-of-type(5),
+	.page2 h3:nth-of-type(6) {
+		margin-top: 2em;
+		margin-left: 1em;
+		padding: 0em;
+    }
+} 
+
 
 /**************/
 /* SECTIE 1 P2*/
@@ -730,6 +754,43 @@ main section:nth-of-type(5) a:active {
 	padding: 0; /* Voeg wat ruimte toe rond de tekst voor leesbaarheid */
 }
 
+/* CSS voor het schermformaat kleiner dan 768px */
+@media screen and (max-width: 767px) {
+    .page2 > section:first-of-type > div:first-of-type {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		text-align:left; /* Uitlijnen van tekst in het midden van de afbeelding */
+		margin-top: 2em;
+		margin-bottom: 1em;
+		margin-left: 2em;
+		margin-right: 2em;
+    }
+
+    .page2 > section:first-of-type img {
+        display: none;
+    }
+	
+	.page2 > section:first-of-type {
+		background-color: rgb(59, 42, 30);
+		padding-top: 2em;
+		padding-bottom: 2em;
+		width: 100%;
+	}
+
+	.page2 > section:first-of-type h1 {
+		font-size: 2.5em;
+	}
+}
+
+/* CSS voor het schermformaat groter dan 768px */
+@media screen and (min-width: 767px) {
+
+    .page2 > section:first-of-type img {
+        width: 100%;
+    }
+}
+
 
 
 
@@ -741,7 +802,14 @@ main section:nth-of-type(5) a:active {
 	margin-top: 8em;
 }
 
-
+/* CSS voor het schermformaat kleiner dan 768px */
+@media screen and (max-width: 978px) {
+    .page2 h3:first-of-type {
+		margin-top: 2em;
+		margin-left: 1em;
+		padding: 0em;
+    }
+}
 
 
 
@@ -865,6 +933,20 @@ main section:nth-of-type(5) a:active {
 	right: 2em; /* Rechtsboven uitlijnen */
 }
 
+/* CSS voor het schermformaat kleiner dan 978px */
+@media screen and (max-width: 978px) {
+    .page2 > div:first-of-type,
+	.page2 div:nth-of-type(3),
+	.page2 div:nth-of-type(5) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		margin-left: 0em;
+		max-width: 100vw;
+	}
+}
 
 
 
@@ -970,7 +1052,18 @@ main section:nth-of-type(5) a:active {
 	margin-bottom: 6em;
 }
 
-
+/* CSS voor het schermformaat kleiner dan 978px */
+@media screen and (max-width: 978px) {
+	.page2 div:nth-of-type(2),
+	.page2 div:nth-of-type(6) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin-left: 0em;
+		max-width: 100vw;
+	}
+}
 
 
 
