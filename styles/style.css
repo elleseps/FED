@@ -474,7 +474,7 @@ section:nth-of-type(3) button:active {
     section:nth-of-type(3) {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: center;
 		margin-bottom: 1em;
 		margin-left: 2em;
 		margin-right: 2em;
@@ -958,10 +958,10 @@ main section:nth-of-type(5) a:active {
 .page2 div:nth-of-type(6)  {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: flex-start;
-	margin-top: 2em;
 	position: relative;
+	margin-left: 4em;
 }
 
 .page2 div:nth-of-type(2) section,
@@ -971,8 +971,8 @@ main section:nth-of-type(5) a:active {
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: left;
-	align-items: baseline;
-	max-width: 40.5em;
+	align-items: center;
+	max-width: 100vw;
 	position: relative;
 }
 
@@ -1242,13 +1242,13 @@ footer nav ul:nth-of-type(2) li a {
 	color: #989c9c;
 }
 
-footer article {
+footer div {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-footer article img {
+footer img {
 	margin-left: 2em;
 	margin-right: 2em;
 }
@@ -1267,7 +1267,6 @@ footer p:last-of-type {
     }
 
     footer nav, 
-	footer article, 
 	footer p:last-of-type {
 		display: none;
 	}
@@ -1281,7 +1280,7 @@ footer p:last-of-type {
     }
 
 	footer nav,
-	footer article,
+	footer div,
 	footer p {
 		max-width: 80vw;
 	}
