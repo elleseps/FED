@@ -653,7 +653,7 @@ main section:nth-of-type(5) a:active {
 .page2 h3:nth-of-type(6) {
 	padding-left: 2em;
 	margin-left: 0.5em;
-	margin-top: 3em;
+	margin-top: 2em;
 }
 
 .page2 h4 {
@@ -662,7 +662,7 @@ main section:nth-of-type(5) a:active {
 	font-weight: 100;
 }
 
-.page2 button {
+.page2 section a:nth-of-type(2) {
 	border-radius: 1em;
 	border-color: white;
 	background-color: var(--color-accents);
@@ -670,13 +670,14 @@ main section:nth-of-type(5) a:active {
 	width: 8em;
 	padding: 1em;
 	position: absolute;
-	bottom: 2em;
+	text-align: center;
+	bottom: 1.5em;
 	opacity: 100%;
-	left: 4em;
+	left: 3.5em;
 }
 
-.page2 button:active,
-.page2 button:hover {
+.page2 section a:nth-of-type(2):active,
+.page2 section a:nth-of-type(2):hover {
 	border-radius: 1em;
 	border-color: black;
 	background-color: lightgray;
@@ -684,9 +685,9 @@ main section:nth-of-type(5) a:active {
 	width: 8em;
 	padding: 1em;
 	position: absolute;
-	bottom: 2em;
+	bottom: 1.5em;
 	opacity: 100%;
-	left: 4em;
+	left: 3.5em;
 	box-shadow: 5px 5px white;
 }
 
@@ -1073,16 +1074,21 @@ main section:nth-of-type(5) a:active {
 
 /* CSS voor het schermformaat kleiner dan 660px */
 @media screen and (max-width: 660px) {
-    .page2 div:nth-of-type(2) section a h4,
-    .page2 div:nth-of-type(6) section a h4 {
-        color: var(--color-text2);
-        text-align: center; /* Centreren van de h4 */
-    }
-
     .page2 div:nth-of-type(2),
     .page2 div:nth-of-type(6) {
         margin: 1em;
     }
+
+	.page2 div:nth-of-type(2) h4,
+    .page2 div:nth-of-type(6) h4 {
+		font-size: 1.5em;
+		text-align: center;
+	}
+	
+	.page2 div:nth-of-type(2) p,
+    .page2 div:nth-of-type(6) p {
+		display: none;
+	}
 
 	.page2 div:nth-of-type(6) {
         margin-bottom: 4em;
@@ -1094,10 +1100,11 @@ main section:nth-of-type(5) a:active {
         justify-content: center;
     }
 
-    .page2 div:nth-of-type(2) section > button,
-    .page2 div:nth-of-type(6) section > button {
-        display: block; /* Zorg ervoor dat de knop een blok-element is */
+    .page2 div:nth-of-type(2) a:nth-of-type(2),
+    .page2 div:nth-of-type(6) a:nth-of-type(2) {
         text-align: center; /* Tekst binnen de knop centreren */
+		position: relative;
+		margin-right: 7.5em;
     }
 }
 
@@ -1107,18 +1114,13 @@ main section:nth-of-type(5) a:active {
 /* DIV 4 */
 /*********/
 div:nth-of-type(4) {
-    display: flex;
-	flex-wrap: wrap;
+	display: flex;
 	justify-content: center;
-	align-items: flex-start;
 	margin-top: 2em;
-	position: relative;
-	margin-left: 9em;
-	margin-right: 10em;
+	margin-left: 4em;
 }
 
 div:nth-of-type(4) img {
-    flex: 1;
 	max-width: 100%;
 	max-height: 100%;
 	width: auto;
@@ -1126,50 +1128,21 @@ div:nth-of-type(4) img {
 	padding: 0;
 }
 
-
-div:nth-of-type(4) section {
-	color: var(--color-text2);
-	text-align: left; /* Centreren van de h4 */
-	position: absolute;
-	bottom: 18em; 
-	left: 5em;
-	width: 32em;
+/* CSS voor het schermformaat kleiner dan 978px */
+@media screen and (min-width: 660px) and (max-width: 1469px) {
+    .page2 div:nth-of-type(4) img {
+		align-items: center;
+		max-width: 80vw;
+    }
 }
 
-div:nth-of-type(4) h2,
-div:nth-of-type(4) h4 {
-    text-align: left; /* Links uitlijnen */
-	color: var(--color-text2);
-	margin: 0;
+/* CSS voor het schermformaat kleiner dan 660px */
+@media screen and (max-width: 660px) {
+	.page2 div:nth-of-type(4) img {
+        align-items: center;
+		margin-right: 4em;
+    }
 }
-
-div:nth-of-type(4) h2 {
-	font-size: 1em;
-	margin-bottom: 0.2em;
-}
-
-div:nth-of-type(4) p,
-div:nth-of-type(4) button,
-div:nth-of-type(4) p:last-child {
-    text-align: left; /* Links uitlijnen */
-    display: inline-block; /* Plaats deze elementen naast elkaar */
-    margin-right: 1em; /* Voeg wat ruimte tussen de elementen toe */
-}
-
-div:nth-of-type(4) button,
-div:nth-of-type(4) button:active,
-div:nth-of-type(4) button:hover {
-	position: absolute;
-	bottom: -4em;
-	left: 0em;
-}
-
-div:nth-of-type(4) p:last-of-type {
-	position: absolute;
-	bottom: -3.5em;
-	left: 8em;
-}
-
 
 
 
