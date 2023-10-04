@@ -196,7 +196,6 @@ header nav:nth-of-type(2) button:active {
 		position: absolute;
 		border: none;
 		top: 3em;
-		margin-left: 1em;
 	}
 
 	header nav ul:first-of-type {
