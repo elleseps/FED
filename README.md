@@ -9,7 +9,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Jij
 
-<details open>
+<details>
   <summary>Uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
@@ -272,7 +272,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Eindgesprek (week 5)
 
-<details>
+<details open>
   <summary>Uitwerken voor eindgesprek</summary>
 
   ### Mijn uitkomst
