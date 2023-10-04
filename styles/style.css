@@ -27,7 +27,6 @@
 
 
 
-
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -57,6 +56,8 @@ button:focus {
     border: 1px solid #036242;
     box-shadow: 0 5px 20px var(--color-box-shadow2);
 }
+
+
 
 
 
@@ -93,9 +94,35 @@ header {
 
 
 /************************************/
+/* LEUKE EXTRA'S */
+/************************************/
+@keyframes spin {
+    100% {
+    transform: rotate(360deg);}
+}
+
+.confetti {
+	background-image: url("https://media.giphy.com/media/PMV7yRpwGO5y9p3DBx/source.gif");
+	background-repeat: no-repeat;
+	background-position: 100%;
+	background-size: cover;
+	background-position: center;
+}
+  
+
+
+
+
+
+/************************************/
 /* ALGEMENE NAVIGATIE PAGINA 1 EN 2 */
 /************************************/
 /* Default styles */
+header img {
+	animation-name: spin;
+    animation-duration: 3s;
+}
+
 header nav ul {
 	display: flex;
 	flex-wrap: wrap;
@@ -118,11 +145,11 @@ header nav ul li a {
 header nav ul li a:hover,
 header nav ul li a:active {
 	text-decoration: underline;
-	color: #036242;
+	color: var(--color-accents);
 	font-size: 1.2em;
 }
   
-header nav button:first-of-type,
+header nav:nth-of-type(2) button,
 header nav input:first-of-type {
 	padding: 1em;
 	border-radius: 2em;
@@ -139,9 +166,9 @@ header nav input:first-of-type {
   
 header nav input:first-of-type:hover,
 header nav input:first-of-type:active,
-header nav button:first-of-type:hover,
-header nav button:first-of-type:active {
-	border-color: #036242;
+header nav:nth-of-type(2) button:hover,
+header nav:nth-of-type(2) button:active {
+	border-color: var(--color-accents);
 	box-shadow: 0px 0px 10px #036242;
 }
 
@@ -164,8 +191,27 @@ header nav button:first-of-type:active {
 
 	}
 
+	header nav:first-of-type button {
+		border: none;
+		position: absolute;
+		border: none;
+		top: 3em;
+		margin-left: 1em;
+	}
+
 	header nav ul:first-of-type {
 		display: none;
+	}
+
+	header nav ul:first-of-type.hamburgermenuopen {
+		display: block;
+		position: absolute;
+		left: 0em;
+		top: 5em;
+		background-color: var(--color-background);
+		width: 100vw;
+		padding-left: 4em;
+		padding-bottom: 2em;
 	}
 
 	header nav ul:nth-of-type(2) {
@@ -177,6 +223,7 @@ header nav button:first-of-type:active {
 		margin-right: 0.2em;
 		margin-left: auto;
 		width: 2.5em;
+		background-color: var(--color-background);
 	}
 }
 
@@ -213,6 +260,13 @@ header nav button:first-of-type:active {
 	}
 }
   
+/* CSS voor het schermformaat van minimaal 909px */
+@media screen and (min-width: 909px) {
+    header nav:first-of-type button {
+		display: none;
+	}
+}
+
 
 
 
@@ -223,6 +277,7 @@ header nav button:first-of-type:active {
 section {
 	max-width: 100%;
 }
+
 
 
 
@@ -271,7 +326,7 @@ div:first-of-type p {
 	padding: 0; /* Voeg wat ruimte toe rond de tekst voor leesbaarheid */
 	margin-top: 0.5em;
 	margin-bottom: 0em;
-	color: white;
+	color: var(--color-background);
 }
 
 /* CSS voor het schermformaat kleiner dan 768px */
@@ -292,7 +347,7 @@ div:first-of-type p {
     }
 	
 	main > section:first-of-type {
-		background-color: #036242;
+		background-color: var(--color-accents);
 		padding-top: 2em;
 		padding-bottom: 2em;
 		width: 100%;
@@ -310,6 +365,8 @@ div:first-of-type p {
         width: 100%;
     }
 }
+
+
 
 
 
@@ -343,7 +400,7 @@ section:nth-of-type(2) li:first-of-type a:active {
 	font-size: 1.5em;
 	font-family: "Kop";
 	text-decoration: underline;
-	color: #036242;
+	color: var(--color-accents);
 }
 
 section:nth-of-type(2) ul {
@@ -363,7 +420,7 @@ section:nth-of-type(2) li:nth-of-type(2) a:active {
 	font-size: 1em;
 	font-family: "NormalText";
 	text-decoration: underline;
-	color: #036242;
+	color: var(--color-accents);
 }
 
 /* CSS voor het schermformaat van max 767px  */
@@ -441,7 +498,7 @@ section:nth-of-type(3) input:hover,
 section:nth-of-type(3) input:active {
 	padding: 1em;
 	border-radius: 2em;
-	border-color: #036242;
+	border-color: var(--color-accents);
 	box-shadow: 0px 0px 10px var(--color-accents);
 }
 
@@ -483,6 +540,8 @@ section:nth-of-type(3) button:active {
 
 
 
+
+
 /*****************/
 /* VIERDE SECTIE */
 /*****************/
@@ -510,7 +569,7 @@ section:nth-of-type(4) ul li {
 	text-align: center;
 	padding: 1em;
 	width: 25em;
-	background-color: #f8f4ec;
+	background-color: #F8F4EC;
 	position: relative; /* Maak de positie van het vakje relatief voor absolute positionering */
 	box-shadow: inset 0px 0px 5px rgb(165, 146, 122);
 }
@@ -596,6 +655,7 @@ section:nth-of-type(4) ul li a p:nth-of-type(2){
 
 
 
+
 /***********/
 /* SECTIE 5*/
 /***********/
@@ -623,10 +683,10 @@ main section:nth-of-type(5) a:active {
 
 
 
+
 /******************************************/
 /*                 VOOR P2                */
 /******************************************/
-
 
 /**************/
 /* ALGEMEEN P2*/
@@ -717,11 +777,14 @@ main section:nth-of-type(5) a:active {
 } 
 
 
+
+
+
 /**************/
 /* SECTIE 1 P2*/
 /**************/
 .page2 > section:first-of-type {
-	background-color:white;
+	background-color: var(--color-background);
 }
 
 .page2 > section:first-of-type > div:first-of-type {
@@ -811,6 +874,8 @@ main section:nth-of-type(5) a:active {
 		padding: 0em;
     }
 }
+
+
 
 
 
@@ -934,27 +999,29 @@ main section:nth-of-type(5) a:active {
 	right: 2em; /* Rechtsboven uitlijnen */
 }
 
-/* CSS voor het schermformaat kleiner dan 978px */
-@media screen and (max-width: 978px) {
-    .page2 > div:first-of-type,
-	.page2 div:nth-of-type(3),
-	.page2 div:nth-of-type(5) {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		position: relative;
-		margin-left: 0em;
-		max-width: 100vw;
-	}
-}
-
 /* CSS voor het schermformaat kleiner dan 660px */
 @media screen and (max-width: 660px) {
     .page2 div:nth-of-type(5) section:nth-of-type(2) h4 {
         font-size: 1.8em;
+	}
+		
+	.page2 > div:first-of-type,
+	.page2 div:nth-of-type(3),
+	.page2 div:nth-of-type(5) {	
+		margin-left: 1em;
     }
 }
+
+/* CSS voor het schermformaat tussen 660px en 978px */
+@media screen and (min-width: 660px) and (max-width: 978px) {
+    .page2 > div:first-of-type,
+	.page2 div:nth-of-type(3),
+	.page2 div:nth-of-type(5) {
+		max-width: 90vw;
+	}
+}
+
+
 
 
 
@@ -991,6 +1058,11 @@ main section:nth-of-type(5) a:active {
 	width: auto;
 	height: auto;
 	padding: 0;
+}
+
+.page2 div:nth-of-type(2) a,
+.page2 div:nth-of-type(6) a {
+	text-decoration: none;
 }
 
 /* Specifiekere styling div 2 */
@@ -1059,19 +1131,6 @@ main section:nth-of-type(5) a:active {
 	margin-bottom: 6em;
 }
 
-/* CSS voor het schermformaat kleiner dan 978px */
-@media screen and (min-width: 660px) and (max-width: 978px) {
-	.page2 div:nth-of-type(2),
-	.page2 div:nth-of-type(6) {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		margin-left: 0em;
-		max-width: 100vw;
-	}
-}
-
 /* CSS voor het schermformaat kleiner dan 660px */
 @media screen and (max-width: 660px) {
     .page2 div:nth-of-type(2),
@@ -1108,41 +1167,73 @@ main section:nth-of-type(5) a:active {
     }
 }
 
+/* CSS voor het schermformaat tussen 660px en 978px */
+@media screen and (min-width: 660px) and (max-width: 978px) {
+	.page2 div:nth-of-type(2),
+	.page2 div:nth-of-type(6) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin-left: 0em;
+		max-width: 100vw;
+	}
+}
+
+
+
 
 
 /*********/
 /* DIV 4 */
 /*********/
-div:nth-of-type(4) {
-	display: flex;
-	justify-content: center;
+.page2 div:nth-of-type(4) {
 	margin-top: 2em;
-	margin-left: 4em;
+	margin-left: 10em;
 }
 
-div:nth-of-type(4) img {
-	max-width: 100%;
-	max-height: 100%;
-	width: auto;
+.page2 div:nth-of-type(4) img {
+	width: 75vw;
 	height: auto;
 	padding: 0;
 }
 
-/* CSS voor het schermformaat kleiner dan 978px */
-@media screen and (min-width: 660px) and (max-width: 1469px) {
-    .page2 div:nth-of-type(4) img {
-		align-items: center;
-		max-width: 80vw;
-    }
-}
-
-/* CSS voor het schermformaat kleiner dan 660px */
-@media screen and (max-width: 660px) {
+/* CSS voor het schermformaat kleiner dan 480px */
+@media screen and (max-width: 480px) {
+	.page2 div:nth-of-type(4) {
+		margin-left: 2em;
+	}
+	
 	.page2 div:nth-of-type(4) img {
         align-items: center;
 		margin-right: 4em;
     }
 }
+
+/* CSS voor het schermformaat kleiner dan 660px */
+@media screen and (min-width: 480px) and (max-width: 660px) {
+	.page2 div:nth-of-type(4) {
+		margin-left: 4em;
+	}
+	
+	.page2 div:nth-of-type(4) img {
+        align-items: center;
+		margin-right: 4em;
+    }
+}
+
+/* CSS voor het schermformaat kleiner dan 978px */
+@media screen and (min-width: 660px) and (max-width: 1469px) {
+    .page2 div:nth-of-type(4) {
+		margin-left: 8em;
+	}
+	
+	.page2 div:nth-of-type(4) img {
+		align-items: center;
+		max-width: 80vw;
+    }
+}
+
 
 
 

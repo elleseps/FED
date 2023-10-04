@@ -275,20 +275,30 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>Uitwerken voor eindgesprek</summary>
 
-  ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  ### Mijn uitkomst
+  ### Receptenpagina
+  <img src="readme-images/SSpagina1mobile.png" width="auto" alt="Screenshot pagina 1 mobiel">
+  <img src="readme-images/SSpagina1ipad.png" width="auto" alt="Screenshot pagina 1 ipad">
+  <img src="readme-images/SSpagina1laptop.png" width="auto" alt="Screenshot pagina 1 laptop">
+
+  ### Koffiepagina
+  <img src="readme-images/SSpagina2mobile.png" width="auto" alt="Screenshot pagina 2 mobiel">
+  <img src="readme-images/SSpagina2ipad.png" width="auto" alt="Screenshot pagina 2 ipad">
+  <img src="readme-images/SSpagina2laptop.png" width="auto" alt="Screenshot pagina 2 laptop">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb gedurende dit vak heel veel meer geleerd van wat je met css kan, zoals bijvoorbeeld het maken van een hamburgermenu, het gebruiken van een grid, het plaatsen van tekst over afbeeldingen heen maar ook hoe je elementen kunt positioneren. Door wat struggles met postion:absolute en beginnen met laptopformaat heb geleerd om altijd mobile-first te werken en zo min mogelijk postion:absolute te gebruiken om zo extra werk te voorkomen. Wat me het meest is bijgebleven is de manier van het aanspreken van elementen, waar ik voorheen altijd classes gebruikte ben ik er nu achter gekomen dat het anders kan. Hetzelfde geldt voor het aanmaken van variabelen voor de diversen kleuren.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/Hamburgermenu.png" width="375px" alt="Kleurvariabelen">
+  <img src="readme-images/Kleurvariabelen.png" width="375px" alt="Uitgeklapt hamburgermenu">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ik had gedurende dit vak erg veel moeite met de tweede pagina, dit omdat deze in zijn geheel bestond uit afbeeldingen met daaroverheen tekst en ik veelal position:absolute hiervoor had gebruikt. Vooral op het moment dat ik het scherm wilde gaan schalen werkte dit niet lekker mee. Mede ook omdat ik niet mobilefirst ben begonnen. Uiteindelijk heb ik het wel kunnen fixen bij de meeste afbeeldingen met behulp van mediaqueries. Alleen op heel klein formaat ziet dit er nog niet heel lekker uit en bij het stukje over starbucks heb ik het helaas niet voor elkaar gekregen.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/Watkonerbeter.png" width="375px" alt="Responsive op klein formaat probleem">
+  <img src="readme-images/Stijlenmetpostionabsolute.png" width="375px" alt="stijlen met postion:absolute">
 </details>
 
 
@@ -297,14 +307,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Bronnenlijst
 
-<details open>
-  <summary>continu bijhouden terwijl je werkt</summary>
+<details>
+  <summary>Continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
-
-  CSS
   - W3schools.com. (2023). *CSS background-image property*. [online] Available at: https://www.w3schools.com/cssref/pr_background-image.php [Accessed 12 Sep. 2023].
   - Imagecolorpicker.com. (2022). *👍 Color Picker online | HEX Color Picker | HTML Color Picker*. [online] Available at: https://imagecolorpicker.com/en [Accessed 12 Sep. 2023].
   - Fontke.com. (2020). Lander Grande Font Download,Lander Grande Regular Font Download,LanderGrande-Regular Font Download|Lander Grande Regular 1.000;Lander Font Download-OTF Font/Uncategorized Font-Fontke.com For Mobile. [online] Available at: https://eng.m.fontke.com/font/162053989/download/ [Accessed 12 Sep. 2023].
@@ -314,5 +319,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - [Css-tricks.com](http://css-tricks.com/). (2023). Available at: https://css-tricks.com/wp-content/uploads/2022/02/css-flexbox-poster.png [Accessed 19 Sep. 2023].
   - Mozilla.org. (2023). *@font-face - CSS: Cascading Style Sheets | MDN*. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face [Accessed 24 Sep. 2023].
   - Mozilla.org. (2023). *scale() - CSS: Cascading Style Sheets | MDN*. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale [Accessed 27 Sep. 2023].
+  - Fontawesomeicons.com. (2023). *ionicons-v5-j*. [online] Available at: https://fontawesomeicons.com/svg/icons/menu-hamburger [Accessed 1 Oct. 2023].
+  - Icons8 (2023). *Google Web Search*. [online] Icons8.com. Available at: https://icons8.com/icons/set/search-button [Accessed 1 Oct. 2023].
+  - CodePen. (2023). *FED 23/24 - JS 3-stap - Oefening 2 - responsive 2-buttons hamburger - uitwerking*. [online] Available at: https://codepen.io/shooft/live/MWZYoqa [Accessed 4 Oct. 2023].
+  - Icons8.com. (2023). *Download 1,316,800 free icons (SVG, PNG)*. [online] Available at: https://icons8.com/icons [Accessed 4 Oct. 2023].
 
 </details>
